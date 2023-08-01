@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vsLb85/5MRiJzhR0aRpv7dw+JRzW4Hb8mNFAJmLLlAg=",
+  "Hash": "+pqE36nbLufyAXt9jdFixOLwHp/P9JbkeWA2ljzOqi8=",
   "Source": "NeoTagger",
   "BasePath": "_content/NeoTagger",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/obj/Debug/net7.0/scopedcss/projectbundle/NeoTagger.bundle.scp.css"
     },
     {
+      "Identity": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/.DS_Store",
+      "SourceId": "NeoTagger",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/",
+      "BasePath": "_content/NeoTagger",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
       "Identity": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/css/site.css",
       "SourceId": "NeoTagger",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/img/lady1.jpg",
+      "SourceId": "NeoTagger",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/",
+      "BasePath": "_content/NeoTagger",
+      "RelativePath": "img/lady1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/lady1.jpg"
     },
     {
       "Identity": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/js/site.js",

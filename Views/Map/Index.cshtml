@@ -1,0 +1,89 @@
+@model IEnumerable<NeoTagger.Models.Tag>
+  
+@{
+    ViewData["Title"] = "Map";
+
+    var tags = @Json.Serialize(Model); 
+}
+
+<div class="container-fluid h-100 m-0 p-0">
+    <div class="row h-100">
+        <div class="col-2">
+            <div class="p-3">
+                <label for="pitch" class="form-label">Pitch</label>
+                <input type="range" class="form-range" min="0" max="85" step="1" id="pitch" value="75">
+            </div>
+
+            <div class="p-3">
+                <label for="bearing" class="form-label">Bearing</label>
+                <input type="range" class="form-range" min="0" max="360" step="1" id="bearing" value="0">
+            </div>
+        </div>
+
+        <div
+            id='map'
+            class='col'
+            style='height: 100vh;'
+        ></div>
+    </div>
+</div>
+
+<script>
+    var tags = @Html.Raw(tags);
+    console.log(tags);
+        
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaXN0cm91c2UiLCJhIjoiY2lzamx6eGRqMDJndjJ1cHV2NXR6MTNoYiJ9.9No__WAI25ogknOpN0JXoQ';
+
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/outdoors-v12',
+        center: [-105, 40],
+        zoom: 10,
+        maxZoom: 16,
+        pitch: 75,
+        bearing: 0,
+    });
+
+    const nav = new mapboxgl.NavigationControl({
+        showCompass: true,
+        showZoom: true,
+        visualizePitch: true,
+    });
+    map.addControl(nav, 'top-left');
+
+    map.on('style.load', () => {
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+        });
+
+        // add the DEM source as a terrain layer with exaggerated height
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1 });
+    });
+
+    tags.forEach(tag => {
+        const popup = new mapboxgl.Popup({ offset: 25 }).setText(tag.name);
+
+        const marker = new mapboxgl.Marker({
+            color: "#ed2956",
+            draggable: false,
+        })
+            .setLngLat([tag.lng, tag.lat])
+            .setPopup(popup)
+            .addTo(map);
+
+        
+        marker._element.id = tag.id;
+    });
+
+    const pitch = document.querySelector('#pitch');
+    pitch.addEventListener('mousemove', event => {
+        map.flyTo({ pitch: parseInt(event.target.value) });
+    });
+
+    const bearing = document.querySelector('#bearing');
+    bearing.addEventListener('mousemove', event => {
+        map.flyTo({ bearing: parseInt(event.target.value) });
+    });
+</script>

@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets/NeoTagger.bundle.scp.css"
     },
     {
+      "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/img/lady1.jpg",
+      "PackagePath": "staticwebassets/img/lady1.jpg"
     },
     {
       "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/js/site.js",
