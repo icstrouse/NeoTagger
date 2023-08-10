@@ -16,7 +16,7 @@
 
             <div class="p-3">
                 <label for="bearing" class="form-label">Bearing</label>
-                <input type="range" class="form-range" min="0" max="360" step="1" id="bearing" value="0">
+                <input type="range" class="form-range" min="0" max="360" step="1" id="bearing" value="270">
             </div>
         </div>
 
@@ -36,12 +36,12 @@
 
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/outdoors-v12',
+        @* style: 'mapbox://styles/mapbox/outdoors-v12', *@
         center: [-105, 40],
         zoom: 10,
-        maxZoom: 16,
+        @* maxZoom: 16, *@
         pitch: 75,
-        bearing: 0,
+        bearing: 270,
     });
 
     const nav = new mapboxgl.NavigationControl({
