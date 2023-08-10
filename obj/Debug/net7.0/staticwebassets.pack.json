@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/img/.DS_Store",
+      "PackagePath": "staticwebassets/img/.DS_Store"
+    },
+    {
+      "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/img/guy1.jpg",
+      "PackagePath": "staticwebassets/img/guy1.jpg"
+    },
+    {
+      "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/img/guy2.jpg",
+      "PackagePath": "staticwebassets/img/guy2.jpg"
+    },
+    {
       "Id": "/Users/ianstrouse/WORKSPACE/neotagger/NeoTagger/wwwroot/img/lady1.jpg",
       "PackagePath": "staticwebassets/img/lady1.jpg"
     },
